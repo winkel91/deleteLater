@@ -14,7 +14,7 @@ public class GreetingController {
     }
     @GetMapping("/")
     public ResponseEntity<Greeting> greeting(){
-        Greeting greeting = new Greeting("goddag fra server");
+        Greeting greeting = new Greeting("godnat fra server");
         greetingRepository.save(greeting);
         return new ResponseEntity<>(greeting, HttpStatus.OK);
     }
